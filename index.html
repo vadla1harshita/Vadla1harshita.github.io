@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harshita Vadlamudi – Senior Java Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F5F7;--surface:#FFFFFF;--ink:#14212B;--muted:#53636F;--line:#D3DCE2;--accent:#0B6E8F;--accent-ink:#FFFFFF;--hot:#B8590B;--chip:#E4ECF0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1A22;--surface:#16252F;--ink:#E8EEF2;--muted:#9FB0BC;--line:#28404E;--accent:#5CC3E4;--accent-ink:#06222D;--hot:#F0A35E;--chip:#1E3340;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1A22;--surface:#16252F;--ink:#E8EEF2;--muted:#9FB0BC;--line:#28404E;--accent:#5CC3E4;--accent-ink:#06222D;--hot:#F0A35E;--chip:#1E3340;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;line-height:1.1;margin:0}
+nav{display:flex;gap:22px;flex-wrap:wrap;padding:22px 0;font-weight:500;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{padding:40px 0 64px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+h1{font-size:clamp(3rem,8vw,5.6rem);font-weight:800;letter-spacing:-.03em}
+.role{font-family:"Bricolage Grotesque",sans-serif;font-size:1.35rem;font-weight:500;margin:18px 0 0;color:var(--accent)}
+.lede{margin:18px 0 28px;color:var(--muted);max-width:52ch}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.main{background:var(--accent);color:var(--accent-ink)}
+.btn.alt{color:var(--accent)}
+.flow{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.flow p{margin:10px 4px 0;font-size:14px;color:var(--muted)}
+.flow svg{width:100%;height:auto;display:block}
+.flow .box{fill:var(--chip);stroke:var(--line)}
+.flow .hl{fill:var(--accent);stroke:none}
+.flow text{font:600 12px "Public Sans",sans-serif;fill:var(--ink)}
+.flow .hl+text{fill:var(--accent-ink)}
+.flow .ln{stroke:var(--muted);stroke-width:1.5;fill:none}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:700;margin-bottom:28px;letter-spacing:-.02em}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:12px 40px}
+.about p{margin:0 0 14px}
+.facts{list-style:none;margin:0;padding:0}
+.facts li{padding:12px 0;border-bottom:1px solid var(--line)}
+.facts b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.15rem}
+.job{display:grid;grid-template-columns:210px 1fr;gap:12px 36px;padding:28px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.when{color:var(--muted);font-size:15px}
+.when strong{display:block;color:var(--ink);font-family:"Bricolage Grotesque",sans-serif;font-size:1.25rem;font-weight:700;line-height:1.2}
+.job h3{font-size:1.3rem;font-weight:700;margin-bottom:10px}
+.job ul{margin:0 0 14px;padding-left:20px}
+.job li{margin-bottom:7px}
+.win{color:var(--hot);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0;list-style:none}
+.chips li{background:var(--chip);border-radius:999px;padding:3px 11px;font-size:13.5px;font-weight:500;margin:0}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px 36px}
+.skills h3{font-size:1.1rem;margin-bottom:10px}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.edu h3{font-size:1.15rem;margin-bottom:4px}
+.edu p{margin:0;color:var(--muted)}
+.contact p{max-width:52ch;color:var(--muted);margin:0 0 22px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){.hero,.about,.edu{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:6px}.hero{gap:32px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#about">About</a><a href="#experience">Experience</a><a href="#genai">Generative AI</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<div>
+<h1>Harshita Vadlamudi</h1>
+<p class="role">Senior Java full stack developer on AWS</p>
+<p class="lede">I build and run enterprise applications for healthcare, banking and retail: Spring Boot services, Angular and React front ends, and the Kafka and AWS plumbing between them. Nine years in, I still like the unglamorous part best: finding why a system is slow and fixing it.</p>
+<div class="btns"><a class="btn main" href="mailto:vadla.harshita1@gmail.com">Email me</a><a class="btn alt" href="http://www.linkedin.com/in/harshita-v-ab4427211">View LinkedIn</a></div>
+</div>
+<div class="flow" role="img" aria-label="Diagram: Angular or React front end calls Spring Boot services, which publish events to Kafka. Kafka feeds Lambda and Step Functions. Services read from Redis and Oracle.">
+<svg viewBox="0 0 360 250" aria-hidden="true">
+<rect class="box" x="10" y="10" width="110" height="38" rx="6"/><text x="26" y="34">Angular / React</text>
+<rect class="hl" x="125" y="100" width="110" height="38" rx="6"/><text x="137" y="124">Spring Boot</text>
+<rect class="box" x="240" y="10" width="110" height="38" rx="6"/><text x="262" y="34">Kafka / MSK</text>
+<rect class="box" x="240" y="100" width="110" height="38" rx="6"/><text x="248" y="124">Lambda + Steps</text>
+<rect class="box" x="10" y="190" width="110" height="38" rx="6"/><text x="46" y="214">Redis</text>
+<rect class="box" x="125" y="190" width="110" height="38" rx="6"/><text x="156" y="214">Oracle</text>
+<rect class="box" x="240" y="190" width="110" height="38" rx="6"/><text x="262" y="214">EKS / ECS</text>
+<path class="ln" d="M65 48 L65 119 L125 119"/><path class="ln" d="M180 100 L180 29 L240 29"/><path class="ln" d="M295 48 L295 100"/><path class="ln" d="M150 138 L65 190"/><path class="ln" d="M180 138 L180 190"/><path class="ln" d="M210 138 L295 190"/>
+</svg>
+<p>A typical request path in my recent work.</p>
+</div>
+</header>
+
+<section id="about">
+<h2>About</h2>
+<div class="about">
+<div>
+<p>I design, modernize and support Java applications across banking, financial services, digital lending, healthcare, retail and e-commerce. My work spans Java 8 through 21, Spring Boot and Spring Cloud, event-driven services, and cloud deployments on AWS.</p>
+<p>I also add generative AI features to existing Java services: internal knowledge search, document summarization and answers grounded in enterprise data, using Amazon Bedrock, RAG, LangChain and LangGraph.</p>
+<p>I mentor junior developers, review code and take part in sprint planning with product, QA, DevOps and architecture teams.</p>
+</div>
+<ul class="facts">
+<li><b>9+ years</b><br>building enterprise applications</li>
+<li><b>AWS Certified Developer – Associate</b></li>
+<li><b>Healthcare, lending, retail</b><br>HIPAA-compliant claims, eligibility and payments work</li>
+<li><b>MS Information Systems</b><br>Central Michigan University</li>
+</ul>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+
+<article class="job">
+<div class="when"><strong>Delta Dental of Michigan</strong>Okemos, MI<br>May 2025 – present</div>
+<div>
+<h3>Sr. Java Full Stack AWS Developer</h3>
+<ul>
+<li>Build microservices for member eligibility, dental benefits, claims, provider management and payments on Java 21 and Spring Boot 3.</li>
+<li>Added Redis caching in front of Oracle for eligibility and provider search, cutting <span class="win">API response time by 35%</span>.</li>
+<li>Wrote Kafka producers and consumers so claims, eligibility and provider updates reach downstream services asynchronously; coordinated multi-step workflows with Lambda and Step Functions.</li>
+<li>Secured APIs with Spring Security, OAuth 2.0, JWT and role-based access, and built Angular 17 screens with NgRx and RxJS for members and providers.</li>
+<li>Deploy on Amazon EKS with GitLab CI/CD; troubleshoot latency, consumer lag and Oracle bottlenecks with CloudWatch, Prometheus, Grafana and Splunk.</li>
+</ul>
+<ul class="chips"><li>Java 21</li><li>Spring Boot 3</li><li>Kafka</li><li>Angular 17</li><li>Oracle 19c</li><li>Cassandra</li><li>Redis</li><li>EKS</li><li>Lambda</li><li>Step Functions</li></ul>
+</div>
+</article>
+
+<article class="job">
+<div class="when"><strong>Discover</strong>Riverwoods, IL<br>Feb 2023 – Apr 2025</div>
+<div>
+<h3>Java Full Stack AWS Developer</h3>
+<ul>
+<li>Built digital banking services for personal loan origination and servicing, payments, and customer accounts.</li>
+<li>Moved loan and payment status handling onto Kafka on Amazon MSK, improving <span class="win">backend processing time by 30%</span>.</li>
+<li>Linked services with OpenFeign and added Resilience4j circuit breakers, retries and fallbacks so one failing downstream service did not stop loan servicing.</li>
+<li>Used EventBridge for event routing and Step Functions with Lambda for validation, status updates and recovery in loan and payment flows.</li>
+<li>Tuned Oracle queries, cached hot customer and loan data in Redis, and built React and Redux screens for loan and account servicing.</li>
+</ul>
+<ul class="chips"><li>Java 17</li><li>Spring Cloud</li><li>MSK</li><li>EventBridge</li><li>Resilience4j</li><li>React</li><li>DynamoDB</li><li>ECS</li><li>Jenkins</li></ul>
+</div>
+</article>
+
+<article class="job">
+<div class="when"><strong>Blue Cross Blue Shield of Michigan</strong>Detroit, MI<br>Nov 2021 – Jan 2023</div>
+<div>
+<h3>Java Full Stack AWS Developer</h3>
+<ul>
+<li>Developed Java 11 microservices for enrollment, claims, provider management, eligibility and policy administration.</li>
+<li>Combined Redis caching with SQL tuning to speed up eligibility verification by <span class="win">25%</span>.</li>
+<li>Processed claims events, provider updates and notifications asynchronously with Kafka, and handled document and validation tasks in Lambda.</li>
+<li>Protected sensitive member and provider data with OAuth 2.0, JWT and role-based access in HIPAA-compliant applications.</li>
+<li>Built Angular 11 portals and ran Jenkins and CloudFormation pipelines for Docker deployments on Amazon ECS.</li>
+</ul>
+<ul class="chips"><li>Java 11</li><li>Spring Boot</li><li>Kafka</li><li>Angular 11</li><li>PostgreSQL</li><li>Oracle</li><li>Redis</li><li>CloudFormation</li></ul>
+</div>
+</article>
+
+<article class="job">
+<div class="when"><strong>Kroger</strong>Cincinnati, OH<br>Feb 2020 – Oct 2021</div>
+<div>
+<h3>Backend Java Developer</h3>
+<ul>
+<li>Worked on retail services for catalog, inventory, pricing, order fulfillment and promotions, including buy online, pick up in store (BOPIS) flows.</li>
+<li>Kept inventory, pricing and order services steady through holiday and seasonal peaks by profiling slow SQL, REST endpoints and JVM metrics.</li>
+<li>Wrote Oracle 12c queries and stored procedures, Angular 8 interfaces, and Spring Security access control for admin modules.</li>
+<li>Containerized services with Docker on ECS with Fargate and provisioned AWS resources with CloudFormation templates.</li>
+</ul>
+<ul class="chips"><li>Java 8</li><li>Spring MVC</li><li>Hibernate</li><li>Angular 8</li><li>Oracle 12c</li><li>Fargate</li></ul>
+</div>
+</article>
+
+<article class="job">
+<div class="when"><strong>iPrism Technologies</strong>Hyderabad, India<br>Sep 2016 – Jul 2019</div>
+<div>
+<h3>Backend Java Developer</h3>
+<ul>
+<li>Started on a team of senior developers building e-commerce modules for catalog, inventory, customers, payments and orders, then took ownership of backend services and production fixes.</li>
+<li>Integrated payment gateways, inventory and fulfillment systems through SOAP services with Spring-WS and XML.</li>
+<li>Wrote core Java business logic and tuned MySQL queries, stored procedures and indexes; built JSP and jQuery pages.</li>
+</ul>
+<ul class="chips"><li>Core Java</li><li>Spring-WS</li><li>SOAP</li><li>MySQL</li><li>JSP</li><li>Tomcat</li></ul>
+</div>
+</article>
+</section>
+
+<section id="genai">
+<h2>Generative AI in enterprise Java</h2>
+<div class="about">
+<div>
+<p>I add LLM features to existing Java and Spring Boot applications, mainly for internal knowledge search, document summarization, and helping people find information spread across several enterprise systems.</p>
+<p>The focus is grounding: answers come from the organization’s own data, and the AI layer connects to backend services safely rather than around them.</p>
+</div>
+<ul class="facts">
+<li><b>Amazon Bedrock</b><br>Model access from Spring Boot services</li>
+<li><b>RAG with embeddings and vector search</b><br>Responses grounded in enterprise data</li>
+<li><b>LangChain and LangGraph</b><br>Orchestration and multi-step flows</li>
+<li><b>Prompt engineering</b><br>Summaries and search answers people can rely on</li>
+</ul>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Backend</h3><ul class="chips"><li>Java 8/11/17/21</li><li>Spring Boot</li><li>Spring Cloud</li><li>Spring Security</li><li>Spring Data JPA</li><li>Hibernate</li><li>REST</li><li>SOAP</li><li>OpenAPI</li></ul></div>
+<div><h3>Frontend</h3><ul class="chips"><li>Angular 8/11/17</li><li>React</li><li>Redux</li><li>NgRx</li><li>RxJS</li><li>TypeScript</li><li>HTML5 / CSS3</li><li>Angular Material</li><li>Bootstrap</li></ul></div>
+<div><h3>AWS and containers</h3><ul class="chips"><li>EC2</li><li>S3</li><li>Lambda</li><li>ECS / Fargate</li><li>EKS</li><li>IAM</li><li>VPC</li><li>CloudWatch</li><li>EventBridge</li><li>Step Functions</li><li>Docker</li><li>Kubernetes</li></ul></div>
+<div><h3>Messaging and data</h3><ul class="chips"><li>Kafka / MSK</li><li>OpenFeign</li><li>Resilience4j</li><li>Oracle</li><li>PostgreSQL</li><li>MySQL</li><li>Cassandra</li><li>DynamoDB</li><li>Redis</li></ul></div>
+<div><h3>Delivery and testing</h3><ul class="chips"><li>GitLab CI/CD</li><li>Jenkins</li><li>Maven</li><li>Terraform</li><li>CloudFormation</li><li>JUnit 5</li><li>Mockito</li><li>Testcontainers</li><li>Postman</li></ul></div>
+<div><h3>Monitoring and AI</h3><ul class="chips"><li>Prometheus</li><li>Grafana</li><li>Splunk</li><li>Dynatrace</li><li>Sumo Logic</li><li>Amazon Bedrock</li><li>RAG</li><li>LangChain</li><li>LangGraph</li></ul></div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education and certification</h2>
+<div class="edu">
+<div><h3>Master of Science, Information Systems</h3><p>Central Michigan University, Michigan</p></div>
+<div><h3>Bachelor of Technology</h3><p>V R Siddhartha Engineering College, Vijayawada, India</p></div>
+<div><h3>AWS Certified Developer – Associate</h3><p><a href="https://www.credly.com/users/harshita-vadlamudi.731454ad">Verify on Credly</a></p></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let’s talk</h2>
+<p>I’m open to conversations about senior Java and full stack roles, especially in healthcare and financial services.</p>
+<div class="btns"><a class="btn main" href="mailto:vadla.harshita1@gmail.com">vadla.harshita1@gmail.com</a><a class="btn alt" href="http://www.linkedin.com/in/harshita-v-ab4427211">LinkedIn profile</a></div>
+</section>
+</div>
+<footer><div class="wrap">© Harshita Vadlamudi</div></footer>
+</body>
+</html>
